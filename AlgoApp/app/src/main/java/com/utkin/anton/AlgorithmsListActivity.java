@@ -7,7 +7,7 @@ public class AlgorithmsListActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.container);
+        setContentView(R.layout.algorithms_list);
 
         if(getFragmentManager().findFragmentById(R.id.container) == null) {
             getFragmentManager().beginTransaction()
