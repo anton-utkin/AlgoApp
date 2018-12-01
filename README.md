@@ -5,7 +5,7 @@ All algorithms were developed in Python, which allows to write source code as br
 Welcome page:
 
 <p align="left">
-  <img src="https://i.ibb.co/KD729B1/Screenshot-20181201-184337.png" width="350">
+  <img src="https://i.ibb.co/HncPbhq/Screenshot-20181201-215727.png" width="350">
 </p>
 
 Algorithms list: 
