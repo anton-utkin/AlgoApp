@@ -19,10 +19,10 @@ public class HomeActivity extends Activity {
         mWebView.setBackgroundColor(Color.TRANSPARENT);
         String text;
         text = "<html><style type=\"text/css\">body{color: #fff; }</style></head>" + "<body><p align=\"justify\">";
-        text+= "Welcome to Algorithms application!</p> <p align=\"justify\"> This application is your notebook, which stores well known algorithms. " +
-                "All algorithms were developed in Python, which allows to write source code as brief as possible. " +
+        text+= "Welcome to Algorithms application!</p> <p align=\"justify\"> This application is your notebook, which stores well-known algorithms. " +
+                "All algorithms were developed in Python, which allows writing source code as brief as possible. " +
                 "Python code is very close to pseudocode, so it makes easier to remember algorithm during interview preparation and " +
-                "also anyone can compile this code an run on real hardware! </p><p align=\"justify\">You should know, that world known companies allow to solve algorithmic problems " +
+                "also anyone can compile this code an run on real hardware! </p><p align=\"justify\">You should know, that world known companies allow solving algorithmic problems " +
                 "using Python during their interviews.";
         text+= "</p></body></html>";
         mWebView.loadData(text, "text/html", "utf-8");
