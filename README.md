@@ -5,17 +5,17 @@ All algorithms were developed in Python, which allows to write source code as br
 Welcome page:
 
 <p align="left">
-  <img src="https://i.ibb.co/HncPbhq/Screenshot-20181201-215727.png" width="350">
+  <img src="https://i.ibb.co/D7ngYDM/Phone-Screenshot-2.png" width="350">
 </p>
 
 Algorithms list: 
 
 <p align="left">
-  <img src="https://i.ibb.co/v4wZL49/Screenshot-20181201-184344.png" width="350">
+  <img src="https://i.ibb.co/yd9jPNn/Phone-Screenshot-3.png" width="350">
 </p>
 
 Source code:
 
 <p align="left">
-  <img src="https://i.ibb.co/QbX9N5k/Screenshot-20181201-184421.png" width="350">
+  <img src="https://i.ibb.co/TkWrMYZ/Phone-Screenshot-2333.png" width="350">
 </p>
