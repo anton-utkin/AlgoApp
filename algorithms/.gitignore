@@ -1,6 +1,0 @@
-*.un~
-./out/*
-*.html
-*.html~
-*.pyc
-build.py

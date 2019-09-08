@@ -51,7 +51,7 @@ public class AlgorithmsProvider extends ContentProvider {
     private SQLiteDatabase db;
     static final String DATABASE_NAME = "Algorithms";
     static final String DATA_STRUCTURES_TABLE_NAME = "data_structures";
-    static final int DATABASE_VERSION = 9;
+    static final int DATABASE_VERSION = 11;
 
     /**
      * Helper class that actually creates and manages
