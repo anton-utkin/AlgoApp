@@ -1,48 +1,27 @@
 package com.utkin.anton;
 
-import android.database.Cursor;
-
 public class AlgorithmItem {
-    private String mId;
     private String mTitle;
-    private boolean mIsKnown;
-    private String mCode;
+    private String mFilename;
 
-    public AlgorithmItem(String id, String title, boolean isKnown, String code) {
-        mId = id;
+    public AlgorithmItem(String title, String filename) {
         mTitle = title;
-        mIsKnown = isKnown;
-        mCode = code;
-    }
-
-    public AlgorithmItem(Cursor data) {
-        mId = data.getString(data.getColumnIndex(AlgorithmsProvider._ID));
-        mTitle = data.getString(data.getColumnIndex(AlgorithmsProvider.NAME));
-        mIsKnown = data.getInt(data.getColumnIndex(AlgorithmsProvider.IS_KNOWN)) > 0;
-        mCode = data.getString(data.getColumnIndex(AlgorithmsProvider.CODE));
+        mFilename = filename;
     }
 
     public void setTitle(String title) {
         mTitle = title;
     }
 
-    public void setIsKnown(boolean isKnown) {
-        mIsKnown = isKnown;
+    public void setFileName(String filename) {
+        mFilename = filename;
     }
-
-    public String getId() { return mId; }
 
     public String getTitle() {
         return mTitle;
     }
 
-    public boolean IsKnown() {
-        return mIsKnown;
+    public String getFileName() {
+        return mFilename;
     }
-
-    public String getCode() {
-        return mCode;
-    }
-
-
 }

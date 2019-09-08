@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Algorithms</string>
-    <string name="title">TITLE</string>
     <string name="details">DETAILS</string>
-    <string name="solved">Solved?</string>
-    <string name="positive_button_name">OK</string>
-    <string name="set_date_message">Set Date:</string>
-    <string name="header_column_a">Algorithm</string>
-    <string name="header_column_b">I know</string>
+    <string name="header_column_a">Algorithms</string>
 </resources>

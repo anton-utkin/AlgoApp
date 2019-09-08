@@ -20,12 +20,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import static com.utkin.anton.AlgorithmDescriptionActivity.EXTRA_ALGO_ID;
 
 
 public class AlgorithmDescriptionFragment extends Fragment {
 
     private static final String TAG = "AlgorithmDescriptionFragment";
-    private static final String SAMPLE_FILE = "android_tutorial.pdf";
     private static final int NEGATIVE_VELOCITY_THRESHOLD = -1000;
     private static final int POSITIVE_VELOCITY_THRESHOLD = 1000;
     private ImageView mImageViewPdf;
@@ -33,6 +33,7 @@ public class AlgorithmDescriptionFragment extends Fragment {
     private PdfRenderer mPdfRenderer;
     private PdfRenderer.Page mCurrentPage;
     private ParcelFileDescriptor mParcelFileDescriptor;
+    private static String mFileName;
 
     public static AlgorithmDescriptionFragment createInstance(Bundle args) {
         AlgorithmDescriptionFragment fragment = new AlgorithmDescriptionFragment();
@@ -44,6 +45,10 @@ public class AlgorithmDescriptionFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPageIndex = 0;
+        AlgorithmItem item = AlgoList.getItemByTitle(getArguments().getString(EXTRA_ALGO_ID));
+        if(item != null) {
+            mFileName = item.getFileName();
+        }
     }
 
     @Override
@@ -116,11 +121,12 @@ public class AlgorithmDescriptionFragment extends Fragment {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void openRenderer(Context context) throws IOException {
-        File file = new File(context.getCacheDir(), SAMPLE_FILE);
+        Log.d(TAG, "openRenderer " + mFileName);
+        File file = new File(context.getCacheDir(), mFileName);
         if(file.exists()){
             file.delete();
         }
-        InputStream asset = context.getAssets().open(SAMPLE_FILE);
+        InputStream asset = context.getAssets().open(mFileName);
         FileOutputStream output = new FileOutputStream(file);
         final byte[] buffer = new byte[1024];
         int size;

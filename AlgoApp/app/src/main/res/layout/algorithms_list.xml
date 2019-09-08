@@ -21,18 +21,6 @@
             android:textStyle="bold"
             android:text="@string/header_column_a"></TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/is_known"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:padding="15dp"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:text="@string/header_column_b"></TextView>
-
     </RelativeLayout>
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
